@@ -4,9 +4,19 @@
 
 //GLOBAL VARIABLES
 /* global $ */
-$("button").click(function() {
+
+var userChoice = $("#shoot").val();
+var randomNumber = Math.random();
+
+if (randomNumber < 0.99) {
+    
+}
+$("#shoot").click(function() {
     $("#userChoice").text($("#input").val());
+    $("#computerChoice").text($("#input").val());
 });
+
+
 
 
 // DOCUMENT READY FUNCTION BELOW

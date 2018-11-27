@@ -5,11 +5,14 @@
 //GLOBAL VARIABLES
 /* global $ */
 
+
 var userChoice = $("#shoot").val();
+var computerChoice = $("#shoot").val();
 var randomNumber = Math.random();
 
 if (randomNumber < 0.99) {
-    
+    computerChoice = "paper";
+    userChoice = "rock";
 }
 $("#shoot").click(function() {
     $("#userChoice").text($("#input").val());
